@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Imperial Plating - Contact</title>
+	<link rel="icon" type="image/x-icon" href="img/logo - favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="img/logo light.png" height="80rem"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="finishes.html">Finishes</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--- Background Video -->
+<div class="video-container">
+	<div class="container-fluid video-caption">
+		<div class="row justify-content-center">
+			<div class="col-md-8 justify-content-center mainHeading">
+				<h1 class="display-1">Contact Us</h1>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<video preload="" autoplay="" muted="" playsinline="" loop="" width="100%">
+		<source src="img/home/Main Carousel/Imperial Site Background Video.mp4" type="video/mp4">
+	</video>
+</div>
+
+<!--- Contact Form -->
+<div class="container padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4 mb-5">Request a Quote</h1>
+			<hr>
+			<form class="row g-3" action="https://formsubmit.co/sales@implating.com" method="POST">
+				<div class="col-md-6">
+					<label for="firstName" class="form-label">First Name</label>
+					<input name="firstName" type="text" class="form-control" id="firstName" required>
+				</div>
+				<div class="col-md-6">
+					<label for="lastName" class="form-label">Last Name</label>
+					<input name="lastName" type="text" class="form-control" id="lastName" required>
+				</div>
+				<div class="col-md-8">
+					<label for="emailInfo" class="form-label">Email Address</label>
+					<input name="emailInfo" type="email" class="form-control" id="emailInfo" placeholder="johnsmith@example.com" required>
+				</div>
+				<div class="col-md-4">
+					<label for="phoneNumber" class="form-label">Phone Number</label>
+					<input name="phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="+1 (123) 456-7890">
+				</div>
+				<div class="col-md-12">
+					<label name="comments" for="comments" class="form-label">Comments</label>
+					<textarea class="form-control" id="comments" rows="5" required placeholder="Part number, finish, weight, quantity, & material."></textarea>
+				</div>
+				<div class="col-md-12">
+					<a href="contact.html"><button type="submit" class="btn btn-dark" onclick="url('#')">Submit</button></a>
+				</div>
+			</form>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<!--- Fixed background -->
+<figure style="height: 30%">
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Our Hours</h5>
+					<hr class="light">
+					<p>Monday - Thursday: 5AM - 4PM</p>
+					<p>Friday: 5AM - 2PM</p>
+					<p>Sunday: Closed</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/logo light.png" height="50rem">
+					<hr class="light">
+					<p>773-586-3500</p>
+					<p>sales@implating.com</p>
+					<p>officemgr@implating.com</p>
+					<p>Chicago, Illinois</p>
+				</div>
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>Connect</h5>
+					<hr class="light">
+					<div class="col-12 social">
+						<a href="https://www.facebook.com/imperialplating/"><i class="fab fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/company/imperialplating"><i class="fab fa-linkedin-in"></i></a>
+						<!--<a href="#"><i class="fab fa-youtube"></i></a>-->
+					</div>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; imperialplating.com</h5>
+					<p style="font-size: 10pt" class="mb-0">Developed and Managed by Implerum, LLC</p>
+					<p style="font-size: 10pt"><a href="https://implerum.com/">implerum.com/</a></p>
+				</div>
+		</div>
+	</div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script>
+	$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Noto Sans';font-size: 14px;*/
+  /*font-family: 'noto sans', sans-serif;/*TT Commons*/
+  color: #000000;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav li:after{
+  content: '';
+  display: block;
+    border-bottom: 2px solid #FFFFFF;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+.nav li:hover:after{
+  transform: scaleX(1);
+}
+.nav-link {
+  font-size: 1.3em !important;
+}
+.bg-dark {
+  background:transparent !important;
+  transition:0.75s ease;
+  /*border-bottom: 0.1px solid rgba(255, 255, 255, .3);*/
+}
+.bg-dark.scrolled {
+  background:#3F3F3F !important;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.5);
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0);
+}
+.video-container-home {
+  height: 100%;
+  position: relative;
+}
+.video-container-home video {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-container {
+  height: 40%;
+  position: relative;
+}
+.video-container video {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-caption {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  text-align: center;
+}
+#slide {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.mainHeading {
+  transform: translateY(-50%);
+}
+.mainHeading hr {
+  width: 55%;
+  background-color: #FFFFFF;
+  height: 2px;
+}
+.display-1{
+  color: #FFFFFF;
+  /*text-shadow: 1px 1px 15px #C4B454;*/
+}
+.home-heading-1{
+  transform: translateX(-18%);
+}
+.home-heading-2{
+  transform: translateX(-3%);
+}
+.home-heading-3{
+  transform: translateX(15%);
+}
+.btn-primary {
+  background-color: #664ab1;
+  border: 1px solid #664ab1;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.small-welcome {
+  margin-top: 0%;
+  background-color: #3f3f3f;
+  color: #d5d5d5 !important;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-camera {
+  color: #e54d26;
+}
+.fa-columns {
+  color: #563d7c;
+}
+.fa-search {
+  color: #2163af;
+}
+.fa-camera, .fa-columns, .fa-search {
+  font-size: 4em;
+  margin: 1rem;
+}
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+.social a {
+  font-size: 2em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-linkedin-in {
+  color: #0a66c2;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus-g:hover, .fa-instagram:hover, .fa-youtube:hover {
+  color: #d5d5d5;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+/* Flip Box CSS */
+.color-white{
+  color: white;
+}
+.flip-box{
+  transform-style: preserve-3d;
+  perspective: 1000;
+  margin-top: 30px;
+}
+.flip-box-front, .flip-box-back{
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 300px;
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  backface-visibility: hidden;
+}
+.flip-box-front{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-front{
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+.flip-box-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-back{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.flip-box .inner{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 60px;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+.flip-box-header{
+  font-size: 30px;
+
+}
+.flip-box p{
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+.flip-box-img{
+  margin-top: 25px;
+}
+.flip-box-button{
+  background-color: transparent;
+  border: 2px solid #FFF;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+/* Flip Box CSS End */
+.map-container{
+  overflow:hidden;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/*---Media Queries --*/
+@media (min-width: 1200px) {
+  .carousel-ultrawide-fix div {
+    max-height: 95vh;
+  }
+}
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  carousel-caption {
+    top: 50%;
+  }
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap-carousel {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed-carousel {
+  background-image: url('img/slider/final.mp4');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/Grid.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
