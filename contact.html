@@ -57,12 +57,7 @@
 		<div class="col-12">
 			<h1 class="display-4 mb-5">Request a Quote</h1>
 			<hr>
-			<form class="row g-3" action="https://formsubmit.co/2eb12be83ccfef47ea0bcf0076bc6d29" method="POST">
-				<!-- Honeypot -->
-				<input type="text" name="_honey" style="display: none;">
-
-				<!-- Disable Captcha -->
-				<input type="hidden" name="_captcha" value="false">
+			<form class="row g-3" action="php/contact.php" method="POST">
 				<div class="col-md-6">
 					<label for="firstName" class="form-label">First Name</label>
 					<input name="firstName" type="text" class="form-control" id="firstName" required>
@@ -80,11 +75,11 @@
 					<input name="phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="+1 (123) 456-7890">
 				</div>
 				<div class="col-md-12">
-					<label name="comments, questions" for="comments" class="form-label">Comments</label>
+					<label name="comments" for="comments" class="form-label">Comments</label>
 					<textarea class="form-control" id="comments" rows="5" required placeholder="Part number, finish, weight, quantity, & material."></textarea>
 				</div>
 				<div class="col-md-12">
-					<a href="contact.html"><button type="submit" class="btn btn-dark" onclick="url('#')">Submit</button></a>
+					<button type="submit" class="btn btn-dark">Submit</button>
 				</div>
 			</form>
 			<hr>

@@ -147,6 +147,10 @@ html, body {
   margin-top: .3rem;
   margin-bottom: 1rem;
 }
+.founders-img{
+  height: 60%;
+  width: 60%;
+}
 .fa-camera {
   color: #e54d26;
 }
@@ -306,18 +310,18 @@ hr.light-100 {
   }
 }
 @media (max-width: 768px) {
-  carousel-caption {
+  video-caption {
     top: 50%;
   }
-  .carousel-caption h1 {
+  .video-caption h1 {
     font-size: 350%;
   }
-  .carousel-caption h3 {
+  .video-caption h3 {
     font-size: 140%;
     font-weight: 400;
     padding-bottom: .2rem;
   }
-  .carousel-caption .btn {
+  .video-caption .btn {
     font-size: 95%;
     padding: 8px 14px;
   }
@@ -330,21 +334,27 @@ hr.light-100 {
   }
 }
 @media (max-width: 576px) {
-  carousel-caption {
-    top: 40%;
+  .video-container {
+    width: 100%;
   }
-  .carousel-caption h1 {
+  .home-heading-1{
+    transform: translateX(-4%);
+  }
+  .home-heading-2{
+    transform: translateX(0%);
+  }
+  .home-heading-3{
+    transform: translateX(0%);
+  }
+  .video-caption h1 {
     font-size: 250%;
   }
-  .carousel-caption h3 {
+  .video-caption h3 {
     font-size: 110%;
   }
-  .carousel-caption .btn {
+  .video-caption .btn {
     font-size: 90%;
     padding: 4px 8px;
-  }
-  .carousel-indicators {
-    display: none;
   }
   .display-4 {
     font-size: 160%;
@@ -352,6 +362,13 @@ hr.light-100 {
   .social a {
     font-size: 2em;
     padding: .7rem;
+  }
+  .founders-img{
+    height: 100%;
+    width: 100%;
+  }
+  .inner p{
+    font-size: 85%;
   }
 }
 
