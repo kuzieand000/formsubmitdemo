@@ -52,7 +52,7 @@ html, body {
   object-fit: cover;
 }
 .video-container {
-  height: 40%;
+  height: 60%;
   position: relative;
 }
 .video-container video {
@@ -334,6 +334,13 @@ hr.light-100 {
   }
 }
 @media (max-width: 576px) {
+  .nav-item{
+    background-color: #3f3f3f;
+  }
+  .nav-link{
+    color: #FFFFFF !important;
+    padding-left: 30px !important;
+  }
   .video-container {
     width: 100%;
   }
