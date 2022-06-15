@@ -99,10 +99,18 @@ html, body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.mainHeading {
+.main-heading-home {
   transform: translateY(-50%);
 }
-.mainHeading hr {
+.main-heading-home hr {
+  width: 55%;
+  background-color: #FFFFFF;
+  height: 2px;
+}
+.main-heading {
+  transform: translateY(-20%);
+}
+.main-heading hr {
   width: 55%;
   background-color: #FFFFFF;
   height: 2px;
@@ -250,6 +258,12 @@ hr.light-100 {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
 }
+.inner p{
+  text-shadow: 4px 4px 2px #000000;
+}
+.inner h3{
+  text-shadow: 4px 4px 2px #000000;
+}
 .flip-box .inner{
   position: absolute;
   left: 0;
@@ -263,7 +277,6 @@ hr.light-100 {
 }
 .flip-box-header{
   font-size: 30px;
-
 }
 .flip-box p{
   font-size: 20px;
@@ -339,7 +352,8 @@ hr.light-100 {
   }
   .nav-link{
     color: #FFFFFF !important;
-    padding-left: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .video-container {
     width: 100%;
@@ -377,10 +391,25 @@ hr.light-100 {
   .inner p{
     font-size: 85%;
   }
+  .card-title{
+    font-size: 100%;
+  }
+  .card-text{
+    font-size: 85%;
+  }
 }
 @media (max-height: 576px) {
   .nav-item{
     background-color: transparent;
+  }
+  .main-heading-home {
+    transform: translateY(-30%);
+  }
+  .card-title{
+    font-size: 100%;
+  }
+  .card-text{
+    font-size: 85%;
   }
 }
 
