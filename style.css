@@ -15,7 +15,7 @@ html, body {
   padding: .8rem;
 }
 .fixed-top{
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,61px);
 }
 .navbar-nav li {
   padding-right: 20px;
