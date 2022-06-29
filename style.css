@@ -14,9 +14,6 @@ html, body {
 .navbar {
   padding: .8rem;
 }
-.fixed-top{
-  z-index: 1000 !important;
-}
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -158,7 +155,7 @@ html, body {
   margin-top: .3rem;
   margin-bottom: 1rem;
 }
-.max-width-industries{
+.industries-fix{
   max-width: 100rem;
 }
 .founders-img{
@@ -277,7 +274,7 @@ hr.light-100 {
   padding: 60px;
   outline: 1px solid transparent;
   perspective: inherit;
-  z-index: 2;
+  /*z-index: 2;*/
   transform: translateY(-50%) translateZ(60px) scale(.94);
   top: 50%;
 }
