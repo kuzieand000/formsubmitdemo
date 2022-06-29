@@ -14,6 +14,9 @@ html, body {
 .navbar {
   padding: .8rem;
 }
+.fixed-top{
+  z-index: 1000;
+}
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -154,6 +157,9 @@ html, body {
   width: 95%;
   margin-top: .3rem;
   margin-bottom: 1rem;
+}
+.max-width-industries{
+  max-width: 100rem;
 }
 .founders-img{
   height: 60%;
