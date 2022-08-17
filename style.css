@@ -316,6 +316,9 @@ hr.light-100 {
   width:100%;
   position:absolute;
 }
+.form-invalid{
+  outline: 2px solid red !important;
+}
 /*---Media Queries --*/
 @media (min-width: 1200px) {
   .carousel-ultrawide-fix div {
