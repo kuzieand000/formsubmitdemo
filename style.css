@@ -13,8 +13,7 @@ html, body {
 }
 .navbar {
   padding: .8rem;
-  perspective: inherit;
-  transform: translatez(61px);
+  transform: perspective(none) translatez(61px);
 }
 .fixed-top{
   -webkit-transform: translate3d(0,0,61px);
