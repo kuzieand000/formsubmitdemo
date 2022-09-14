@@ -13,6 +13,7 @@ html, body {
 }
 .navbar {
   padding: .8rem;
+  transform-style: preserve-3d;
   transform: translateZ(1000px);
 }
 .fixed-top{
