@@ -13,6 +13,7 @@ html, body {
 }
 .navbar {
   padding: .8rem;
+  transform: translatez(61px);
 }
 .fixed-top{
   -webkit-transform: translate3d(0,0,61px);
@@ -71,6 +72,7 @@ html, body {
   top: 50%;
   text-align: center;
 }
+
 #slide {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
@@ -274,10 +276,8 @@ hr.light-100 {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 60px;
   outline: 1px solid transparent;
   perspective: inherit;
-  /*z-index: 2;*/
   transform: translateY(-50%) translateZ(60px) scale(.94);
   top: 50%;
 }
@@ -290,18 +290,6 @@ hr.light-100 {
 }
 .flip-box-img{
   margin-top: 25px;
-}
-.flip-box-button{
-  background-color: transparent;
-  border: 2px solid #FFF;
-  border-radius: 2px;
-  color: #FFF;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 25px;
-  padding: 15px 20px;
-  text-transform: uppercase;
 }
 /* Flip Box CSS End */
 .map-container{
@@ -316,8 +304,33 @@ hr.light-100 {
   width:100%;
   position:absolute;
 }
-.form-invalid{
-  outline: 2px solid red !important;
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .success_page{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
 }
 /*---Media Queries --*/
 @media (min-width: 1200px) {
@@ -345,7 +358,7 @@ hr.light-100 {
   }
   .video-caption .btn {
     font-size: 95%;
-    padding: 8px 14px;
+    padding: 8px 0px;
   }
   .display-4 {
     font-size: 200%;
@@ -353,6 +366,12 @@ hr.light-100 {
   .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+}
+@media (min-width: 767px) {
+  .hide-on-desktop {
+    visibility: hidden;
+    display: none;
   }
 }
 @media (max-width: 576px),(max-height: 576px) {
@@ -419,6 +438,14 @@ hr.light-100 {
   }
   .card-text{
     font-size: 85%;
+  }
+}
+@media (max-width: 430px) {
+  .inner p{
+    font-size: 90%;
+  }
+  .inner h3{
+    font-size: 25px;
   }
 }
 

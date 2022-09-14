@@ -29,7 +29,7 @@
 					<a class="nav-link" href="finishes">Finishes</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Contact</a>
+					<a class="nav-link" href="contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -51,7 +51,7 @@
 	</video>
 </div>
 
-<!-- Contact Form -->
+<!--- Contact Form -->
 <div class="container padding">
 	<div class="row welcome text-center">
 		<div class="col-12">
@@ -78,12 +78,8 @@
 					<label for="comments" class="form-label">Comments</label>
 					<textarea name="comments" class="form-control" id="comments" rows="5" required placeholder="Part number, finish, weight, quantity, & material."></textarea>
 				</div>
-				<div class="col-md-12">
-					<button type="submit" class="btn btn-dark" onclick="message()">Submit</button>
-				</div>
 				<div class="message">
-                <div class="success" id="success">Your Message Successfully Sent!</div>
-                <div class="danger" id="danger">Failed to send...</div>
+                <div class="success_page" id="success_page">Your Message Successfully Sent!</div>
         </div>
 			</form>
 			<hr>
@@ -148,35 +144,6 @@
 	$(window).scroll(function(){
 		$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
 	});
-</script>
-/<script>
-	function message(){
-		var Name = document.getElementById('firstName');
-		var email = document.getElementById('email');
-		var msg = document.getElementById('comments');
-		const success = document.getElementById('success');
-		const danger = document.getElementById('danger');
-
-		if(Name.value === '' || email.value === '' || msg.value === ''){
-				danger.style.display = 'block';
-		}
-		else{
-				setTimeout(() => {
-						Name.value = '';
-						email.value = '';
-						msg.value = '';
-				}, 2000);
-
-				success.style.display = 'block';
-		}
-
-
-		setTimeout(() => {
-				danger.style.display = 'none';
-				success.style.display = 'none';
-		}, 4000);
-
-	}
 </script>
 
 </body>
